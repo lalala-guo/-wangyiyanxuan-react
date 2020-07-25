@@ -1,10 +1,3 @@
-// import React from 'react'
-// import {NavLink} from 'react-router-dom'
-
-// export default function MyNavLink(props) {
-//   return <NavLink {...props} activeClassName='activeClass'/>
-// }
-
 import React from 'react'
 import {Link, Route} from 'react-router-dom'
 import Index from '../index/index'
@@ -19,12 +12,14 @@ export default class NavLink extends React.Component {
     // }
 
     render(){
+        // const { activeFlag } = this.state
         return(
             <>
+
                 <div className="tabBarWrap">
                         <div className="tabBar">
                                 <Link to="/">
-                                    <div className="item" >
+                                    <div className="item">
                                         <i className="index" ></i>
                                         <span>首页</span>
                                     </div>
